@@ -1,11 +1,11 @@
 body {
   color: #3c3c3c;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 /*************   Create the menubar with two flex objects.  One to the set the icon and list on
   oposite sides; another to create a flexible list of menu items. *********************************/
-nav  {
+nav {
   display: flex;
   justify-content: space-between;
   background-color: #3c3c3c;
@@ -17,25 +17,22 @@ nav  {
   padding-top: 20px;
 }
 .nav-links {
-  display: flex; 
-  list-style: none;  
+  display: flex;
+  list-style: none;
   padding-right: 10px;
 }
 .nav-item a {
   color: white;
-  padding: 10px 15px;   
+  padding: 10px 15px;
   text-decoration: none;
-}
-.nav-item:hover {
 }
 .nav-item:hover a {
   color: black;
   background-color: white;
-
 }
 /******* Create banner section with background image and headings on top *****/
 .banner {
-  background-image: url("../images/home_banner-x489.png"); 
+  background-image: url("../images/home_banner-x489.png");
   background-size: cover;
   height: 350px;
   color: white;
@@ -44,14 +41,14 @@ nav  {
   padding-top: 100px;
 }
 .banner h1 {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   text-shadow: 3px 3px 2px #474747;
 }
 
 /**********       Create 3 column layout         ************/
 .triple-col {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 20px;
   text-align: center;
 }
@@ -67,16 +64,10 @@ nav  {
   text-align: center;
   font-size: 2em;
 }
-
-.content-two a:link {
-}
-.content-two a:hover {
-}
-
 /************* Create 4 column layout    ************************/
 .quad-col {
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   padding: 10px;
   text-align: center;
 }
@@ -109,16 +100,25 @@ footer .button {
 /**************** create a verticle layout for mobile devices (smaller than 600px ).    *********/
 @media all and (max-width: 600px) {
   .triple-col {
-   
-
+    display: grid;
+    padding: 20px;
+    text-align: center;
   }
   .quad-col {
-
+    display: grid;
+    padding: 10px;
+    text-align: center;
   }
   nav {
- 
+    display: flex;
+    justify-content: space-between;
+    background-color: #3c3c3c;
+    color: white;
+    width: 100%;
   }
   .nav-links {
- 
+    display: flex;
+    list-style: none;
+    padding-right: 10px;
   }
 }
